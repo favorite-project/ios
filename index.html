@@ -9,6 +9,13 @@
     <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
-  <a href="itms-services://?action=download-manifest&url=https://shadowrocket.buger.dev/ipa.plist">DOWNLOAD</a>
+  <a id="install" href="itms-services://?action=download-manifest&url=https://shadowrocket.buger.dev/ipa.plist">DOWNLOAD</a>
+  <script>
+	  (function() {
+		if (new URLSearchParams(window.location.search).has('mirror')) {
+			document.getElementById('install').href.replace('ipa', 'mirror');
+		}
+	  })()
+  </script>
 </body>
 </html>

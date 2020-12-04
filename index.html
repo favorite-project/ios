@@ -1,21 +1,21 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<meta name="description" content="Shadowrocket" />
-	<meta name="keywords" content="Shadowrocket" />
-	<title>Shadowrocket</title>
+    <meta name="description" content="Shadowrocket" />
+    <meta name="keywords" content="Shadowrocket" />
+    <title>Shadowrocket</title>
     <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
   <a id="install" href="itms-services://?action=download-manifest&url=https://shadowrocket.buger.dev/ipa.plist">DOWNLOAD</a>
   <script>
-	  (function() {
-		if (new URLSearchParams(window.location.search).has('mirror')) {
-			document.getElementById('install').href.replace('ipa', 'mirror');
-		}
-	  })()
+    (function() {
+        if (new URLSearchParams(window.location.search).has('mirror')) {
+            document.getElementById('install').href = document.getElementById('install').href.replace('ipa', 'mirror');
+            }
+    })()
   </script>
 </body>
 </html>

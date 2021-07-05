@@ -1,3 +1,3 @@
 # shadowrocket
 
-[DOWNLOAD](shadowrocket.buger.dev)
+[DOWNLOAD](https://favorite-project.github.io/ios/)
